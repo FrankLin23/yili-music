@@ -19,7 +19,7 @@ FROM alpine:3.13
 
 ENV MYSQL_HOST 10.0.224.16
 ENV MYSQL_USER_NAME root
-ENV MYSQL_PASSWORD a123456q
+ENV MYSQL_PASSWORD A123456q
 ENV DATABASE_NAME music
 
 # 安装依赖包，如需其他依赖包，请到alpine依赖包管理(https://pkgs.alpinelinux.org/packages?name=php8*imagick*&branch=v3.13)查找。
