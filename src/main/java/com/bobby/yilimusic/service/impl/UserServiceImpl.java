@@ -9,6 +9,7 @@ import com.bobby.yilimusic.mapper.UserMapper;
 import com.bobby.yilimusic.repository.UserRepository;
 import com.bobby.yilimusic.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -65,7 +66,5 @@ public class UserServiceImpl implements UserService {
     }
 
     @Autowired
-    public void setMapper(UserMapper mapper) {
-        this.mapper = mapper;
-    }
+    public void setMapper(UserMapper mapper) {this.mapper = mapper;}
 }
